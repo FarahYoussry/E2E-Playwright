@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-test.only('restful api', async ({ request }) => {
+test('restful api', async ({ request }) => {
    const response = await request.post( 'https://api.restful-api.dev/objects',{
     data: {
       name: "Apple MacBook Pro 30",
